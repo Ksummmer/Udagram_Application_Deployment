@@ -43,7 +43,7 @@ jobs:
       - eb/setup
       - aws-cli/setup
       - checkout
-       - run:
+      - run:
           name: Back-End Deploy App
           command: |
             npm run backend:deploy
