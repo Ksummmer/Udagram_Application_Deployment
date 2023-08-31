@@ -40,9 +40,9 @@ jobs:
     steps:
       - node/install:
           node-version: '14.15' 
-      - eb/setup
-      - aws-cli/setup
       - checkout
+      - aws-cli/setup
+      - eb/setup
       - run:
           name: Back-End Deploy App
           command: |
