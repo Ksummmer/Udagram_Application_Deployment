@@ -3,9 +3,6 @@ branch-defaults:
     environment: udagram-api-dev
 deploy:
   artifact: www/Archive.zip
-Current CodeCommit setup:
-  Repository: Deployment
-  Branch: main
 global:
   application_name: udagram-api
   branch: null
@@ -17,7 +14,8 @@ global:
   platform_name: null
   platform_version: null
   repository: null
-  sc: null
+  sc: git
   workspace_type: Application
   ssh: n
   Do you want to set up SSH for your instances? (Y/n): n
+  profile: eb-cli
