@@ -19,7 +19,9 @@ jobs:
     steps:
       # install node and checkout code
       - node/install:
-          node-version: '14.15'         
+          node-version: '14.15'
+      - eb/setup
+      - aws-cli/setup         
       - checkout
       # Use root level package.json to install dependencies in the frontend app
       - run:
@@ -42,18 +44,6 @@ jobs:
           name: Back-End Build
           command: |
             npm run backend:build    
-  # deploy step will run only after manual approval
-  deploy:
-    docker:
-      - image: "cimg/base:stable"
-      # more setup needed for aws, node, elastic beanstalk
-    steps:
-      # install node and checkout code
-      - node/install:
-          node-version: '14.15' 
-      - eb/setup
-      - aws-cli/setup
-      - checkout
       - run:
           name: Back-End Deploy App
           command: |
@@ -75,8 +65,4 @@ workflows:
           type: approval
           requires:
             - build
-      - deploy:
-          requires:
-            - hold
-
 
