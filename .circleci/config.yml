@@ -61,7 +61,7 @@ workflows:
           filters:
             branches:
               only:
-                - circleci-project-setup
+                - master
           type: approval
           requires:
             - build
