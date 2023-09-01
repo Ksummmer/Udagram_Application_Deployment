@@ -16,6 +16,5 @@ global:
   repository: null
   sc: git
   workspace_type: Application
-  ssh: n
-  Do you want to set up SSH for your instances? (Y/n): n
-  profile: eb-cli
+  Do you want to set up SSH for your instances? (Y/n): null
+  profile: null
