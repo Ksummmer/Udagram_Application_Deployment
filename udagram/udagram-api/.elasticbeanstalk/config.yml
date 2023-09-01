@@ -24,3 +24,4 @@ global:
   sc: null
   workspace_type: Application
   ssh: n
+  Do you want to set up SSH for your instances? (Y/n): n
