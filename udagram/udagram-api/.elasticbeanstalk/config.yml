@@ -7,6 +7,9 @@ environment-defaults:
   udagram-api-dev:
     branch: null
     repository: null
+Current CodeCommit setup:
+  Repository: Deployment
+  Branch: main
 global:
   application_name: udagram-api
   branch: null
