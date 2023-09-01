@@ -3,6 +3,10 @@ branch-defaults:
     environment: udagram-api-dev
 deploy:
   artifact: www/Archive.zip
+environment-defaults:
+  udagram-api-dev:
+    branch: null
+    repository: null
 global:
   application_name: udagram-api
   branch: null
@@ -17,4 +21,3 @@ global:
   sc: null
   workspace_type: Application
   ssh: n
-  Do you want to set up SSH for your instances?: n
