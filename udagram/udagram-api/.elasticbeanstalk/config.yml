@@ -14,7 +14,6 @@ global:
   platform_name: null
   platform_version: null
   repository: null
-  sc: git
+  sc: null
   workspace_type: Application
-  Do you want to set up SSH for your instances? (Y/n): null
-  profile: null
+  Do you want to set up SSH for your instances? (Y/n): default
