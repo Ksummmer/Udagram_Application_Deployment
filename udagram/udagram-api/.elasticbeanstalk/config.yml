@@ -3,10 +3,6 @@ branch-defaults:
     environment: udagram-api-dev
 deploy:
   artifact: www/Archive.zip
-environment-defaults:
-  udagram-api-dev:
-    branch: null
-    repository: null
 Current CodeCommit setup:
   Repository: Deployment
   Branch: main
