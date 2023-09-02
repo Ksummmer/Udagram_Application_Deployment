@@ -6,7 +6,7 @@ const options: SequelizeOptions = {
   password: config.password,
   database: config.database,
   host: config.host,
-  port: config.port,
+  //port: config.port,
   dialect: "postgres",
   //native: true,
   dialectOptions: {
@@ -24,4 +24,5 @@ console.log(config);
 
 export const sequelize = new Sequelize(`postgres://${config.username}:${config.password}@${config.host}:5432/${config.database}`, 
 options);
+//export const sequelize = new Sequelize("postgres://postgres:postgres@database-1.cbvrutqt8uib.us-east-1.rds.amazonaws.com:5432/postgres");
 
