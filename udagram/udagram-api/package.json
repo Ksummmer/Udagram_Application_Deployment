@@ -5,7 +5,7 @@
   "engines": {
     "node": "14.15.0"
   },
-  "main": "server.js",
+  "main": "www/server.js",
   "scripts": {
     "start": "node server.js",
     "start:dev": "node ./www/server.js",
