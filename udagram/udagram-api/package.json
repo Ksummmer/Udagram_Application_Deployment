@@ -18,7 +18,8 @@
     "clean-windows": "rimraf www/ || true",
     "build-windows": "npm run clean-windows && tsc && npm run copy-windows",
     "copy-windows": "copy .npmrc \"www/.npmrc\" && copy package.json \"www/package.json\" && xcopy /E /I \"src/migrations\" \"www/migrations\"",
-    "deploy": "sh ./bin/deploy.sh"
+    "deploy": "sh ./bin/deploy.sh",
+    "aws-eb:prod": "npm run build && npm run start:prod"
   },
   "keywords": [],
   "author": "Gabriel Ruttner",
