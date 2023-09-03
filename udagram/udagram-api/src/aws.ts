@@ -5,7 +5,7 @@ import { config } from "./config/config";
 
 
 // Configure AWS
-const credentials = new AWS.Credentials({
+export const credentials = new AWS.Credentials({
   accessKeyId: config.accessKeyId,
   secretAccessKey: config.secretAccessKey,
 });
